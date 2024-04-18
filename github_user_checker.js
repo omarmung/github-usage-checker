@@ -1,5 +1,4 @@
 const https = require('https');
-const request = require('request');
 
 
 // HELPERS
@@ -36,11 +35,11 @@ async function fetchJSON(url, headers = {}) {
 
 // Set the user agent header
 // Get a Bearer token by going to https://github.com/settings/personal-access-tokens 
-//  and creating a new token, and replace it below like so: 'Authorization': 'Bearer <THE TOKEN GOES HERE>'
+//  and creating a new token, and replace it below like so: 'Authorization': 'Bearer sdfljsfldkjsdflksdjflsdkjflsdkfj'
 const headers = {
 	'User-Agent': 'request',
 	'Accept': 'application/vnd.github+json',
-	'Authorization': 'Bearer ',
+	'Authorization': 'Bearer <REPLACE THIS WITH YR TOKEN>',
 	'X-GitHub-Api-Version': '2022-11-28'
 };
 
